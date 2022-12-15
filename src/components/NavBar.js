@@ -53,9 +53,9 @@ export const NavBar = () => {
                 <button className="vvd"><span>Contactez-moi</span></button>
               </HashLink>
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://fr.linkedin.com/"><img src={navIcon1} alt="Icon2" /></a>
+              <a href="https://fr-fr.facebook.com/"><img src={navIcon2} alt="Icon1" /></a>
+              <a href="https://twitter.com/?lang=fr"><img src={navIcon3} alt="Icon4" /></a>
               </div>
             </span>
           </Navbar.Collapse>
