@@ -16,7 +16,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Bienvenu sur mon Portofolio</span>
                   <h1>{`Je suis AndersonK, `}
-                    <span className="wrap">Deveppeur Web/Mobile, Administrateur bases de donnees mysql</span>
+                    <span className="wrap">Administrateur bases de donnees mysql</span>
                   
                   </h1>
                   <p>J'ai des compétences dans plusieurs domaines
