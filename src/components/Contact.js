@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
@@ -22,6 +23,7 @@ export const Contact = () => {
         [category]: value
       })
   }
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
