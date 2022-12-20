@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import monImage from "../assets/img/monImage.png"
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
-import Typed from "react-typed"
+// import Typed from "react-typed"
 
 export const Banner = () => {
 
@@ -15,7 +15,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                 
+
                   <h1>{`Je suis AndersonK `} <br></br>
                     <span className="wrap">
                       {/* <Typed
