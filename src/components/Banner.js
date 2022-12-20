@@ -19,20 +19,22 @@ export const Banner = () => {
                   <h1>{`Je suis AndersonK `} <br></br>
                     <span className="wrap">
                       <Typed
-                        strings={[
-                          "Web/Mobile Developer",
-                          "Data Base Administration",
-                          "Analyst cybersecurity",
-                        ]}
+                        strings={
+                          [
+                            "Developpeur Web/Mobile",
+                            "Administrateur Data Base",
+                            "Analyst cybersecurité"
+                          ]
+                        }
                         typeSpeed={150}
                         backSpeed={100}
                         loop
-                      />                      
+                      />
                     </span>
 
                   </h1>
                   <p>J'ai des compétences dans plusieurs domaines
-                    Notemment dans l'Administration système Linux, Administration de bases de donnees,
+                    Notamment dans l'Administration système Linux, Administration de bases de donnees,
                     Analyst en CyberSecurité, le Développement Web et Mobile.</p>
                   <button onClick={() => console.log('connect moi')}>Contactez-moi <ArrowRightCircle size={25} /></button>
                 </div>}
