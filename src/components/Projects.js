@@ -1,32 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { WebProject } from './ProjectData'
 
 export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Cloud App",
-      description: "site vitrine dynamique",
-      imgUrl: projImg1,
-    },
-    {
-      title: "reactQuiz",
-      description: "Application de quiz ",
-      imgUrl: projImg2,
-    },
-    {
-      title: "myHome",
-      description: "Application de location de maison",
-      imgUrl: projImg3,
-    }
-  ];
 
   return (
     <section className="project" id="projects">
@@ -49,12 +29,12 @@ export const Projects = () => {
                         <Nav.Link eventKey="third">Sécurité Informatique</Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    
+
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            WebProject.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
@@ -66,34 +46,15 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                        <Row>
-                          {
-                            projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
+                        <p>Gestion de base de données Mysql.</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <Row>
-                          {
-                            projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <p> Test d'intrusion
+                          <br></br>Audite de sécurité
+                          <br></br>Automatisation avec selenium
+                          <br></br>Déploiment des solutions de détection et de protection d'intrusion
+                          <br></br>Mise en place de solution de monitoring avec Grafana-Prometheus.
+                        </p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

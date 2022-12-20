@@ -290,23 +290,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-/* .banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-} */
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
 
 /************ Skills Css ************/
 .skill {
@@ -314,9 +297,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #3a3737;
+  background-color: #3a3737;
   margin-top: -100px;
-  background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 60px;

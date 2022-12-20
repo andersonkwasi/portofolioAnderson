@@ -16,7 +16,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Bienvenu sur mon Portofolio</span>
-                  <h1>{`Je suis AndersonK, `}
+                  <h1>{`Je suis AndersonK `} <br></br>
                     <span className="wrap">
                       <Typed
                         strings={[
